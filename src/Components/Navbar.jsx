@@ -8,14 +8,19 @@ export default function Navbar () {
 
     return (
         <>
-            <header>
+            <header className="position-absolute vw-100 z-3">
                 <nav className="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
 
                     <div className="container-fluid">
 
                         <h1 className="navbar-brand ms-5">JOHN DOE</h1>
+                        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            
+                            <span class="navbar-toggler-icon"></span>
 
-                        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        </button>
+
+                        <div className="collapse navbar-collapse justify-content-end " id="navbarNav">
 
                             <ul className="navbar-nav gap-3 me-5">
                                 <NavLink className="nav-link" to="/">Accueil</NavLink>
@@ -27,11 +32,6 @@ export default function Navbar () {
 
                         </div>
 
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            
-                            <span class="navbar-toggler-icon"></span>
-
-                        </button>
                     </div>
                 </nav>
             </header>

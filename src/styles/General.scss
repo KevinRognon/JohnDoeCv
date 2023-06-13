@@ -7,6 +7,10 @@ html, ::before, ::after, * {
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: var(--titre);
+}
+
 body {
     background-color: var(--bg);
     color: var(--dg);
@@ -20,4 +24,9 @@ nav {
 
 strong {
     color: var(--bl);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
