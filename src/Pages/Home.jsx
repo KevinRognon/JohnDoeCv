@@ -7,25 +7,25 @@ export default function Home () {
 
     return (
         <>
-            <section className="section-home d-flex justify-content-center align-items-center container-fluid">
-                <div className="d-flex flex-column gap-3">
+            <section>
+                <div>
 
-                    <h1 className="titre-home-section text-light">Bonjour, je suis John Doe</h1>
+                    <h1>Bonjour, je suis John Doe</h1>
 
-                    <h2 className="titremetier-home-section text-light">Développeur web full stack</h2>
+                    <h2>Développeur web full stack</h2>
 
-                    <button type="button" className="btn btn-primary justify-self-center align-self-center z-3"><a href="#a-propos">En savoir plus</a></button>
+                    <button type="button"><a href="#a-propos">En savoir plus</a></button>
 
                 </div>
             </section>
 
 
-            <section id="a-propos" className="d-flex justify-content-center align-items-center container-fluid mt-3">
+            <section id="a-propos">
 
 
-                <div className="d-flex flex-row gap-5 container-fluid col-9 card p-5 rounded-2 border-0">
+                <div>
 
-                    <div className="a-propos-texte d-flex flex-column gap-4 col-5 ">
+                    <div>
 
                         <div className="titre-section-a-propos">
                             <h3>À propos</h3>
@@ -42,10 +42,10 @@ export default function Home () {
                         </p>
                     </div>
 
-                    <div className="image_john_competences col-6 container-fluid d-flex gap-2 flex-column">
+                    <div className="image_john_competences col-12 container-sm d-flex gap-2 flex-column">
                         <img className="rounded-2" src={john_doe} alt="John_Doe" />
                         <h3>Mes compétences</h3>
-                        <div className="competences d-flex flex-column gap-3">
+                        <div className="competences d-flex flex-column gap-3 container-sm">
                             <div>
                                 <p>HTML5 90%</p>
                                 <div className="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
