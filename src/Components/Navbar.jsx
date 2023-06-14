@@ -40,7 +40,7 @@ export default function Navbar () {
             <main>
                 <Outlet />
 
-                <footer>
+                <footer className="bg-secondary-subtle">
                     <Footer />
                 </footer>
             </main>
