@@ -21,7 +21,7 @@ export default function Home () {
 
 
             <section className='gap-5 d-flex align-items-center justify-content-center' id="a-propos">
-                <div className='card-a-propos d-flex justify-content-between flex-column flex-xxl-row card p-5 mt-5 border-0 col-12 col-xl-11'>
+                <div className='card-a-propos d-flex justify-content-between flex-column flex-lg-row card p-5 mt-5 border-0 col-12 col-xl-11'>
 
                     <div className='d-flex flex-column col-lg-5 gap-5'>
 
@@ -29,7 +29,7 @@ export default function Home () {
                             <h3>À propos</h3>
                             <hr />
                         </div>
-                        <div className='col-lg-11 fs-4 d-flex flex-column gap-2'>
+                        <div className='text-align-justify col-lg-11 fs-4 d-flex flex-column gap-2'>
                             <p>
                                 Passionné par l'informatique et les nouvelles <br />technologies, j'ai suivi une formation d'<strong>intégrateur-développeur web</strong> au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du dévelopemment web.
                             </p>

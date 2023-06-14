@@ -1,4 +1,5 @@
 import { NavLink, Outlet } from "react-router-dom";
+import Footer from "./Footer";
 
 
 
@@ -38,6 +39,10 @@ export default function Navbar () {
 
             <main>
                 <Outlet />
+
+                <footer>
+                    <Footer />
+                </footer>
             </main>
         </>
     )
