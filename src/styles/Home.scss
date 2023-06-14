@@ -3,9 +3,27 @@
     padding-right: 15px;
 }
 
+@media only screen and (min-width: 400px) {
+    .section-home {
+        background-image: url(../assets/hero-bg.jpg);
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .section-home {
+        background-image: url(../assets/hero-bg-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+    }
+}
+
 .section-home {
-    background-image: url(../assets/hero-bg.jpg);
-    background-size: cover;
+    // background-image: url(../assets/hero-bg-mobile.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position-x: 50%;
 
     height: 100vh;
 
@@ -21,35 +39,30 @@
         background-color: black;
     }
 
-    .titre-home-section {
-        font-size: 6rem;
-        text-shadow: 0 3px 7px black;
-    }
-    .titremetier-home-section {
-        text-shadow: 0 3px 7px black;
-    }
-
-    .titre-home-section, .titremetier-home-section, .bouton-savoir {
-        z-index: 3;
+    div {
+        .titre-home {
+            font-size: 2.7em;
+            text-align: center;
+            z-index: 2;
+            color: white;
+        }
+        .titre-metier-home {
+            font-size: 1.5em;
+            text-align: center;
+            z-index: 2;
+            color: white;
+        }
+        .bouton-savoir-plus-home {
+            z-index: 2;
+            width: 50%;
+        }
     }
 }
 
 #a-propos {
 
-    margin-top: 5rem !important;
-
-    .a-propos-texte {
-        text-align: justify;
-        font-size: 1.3em;
-
-        .titre-section-a-propos {
-            hr {
-                border: none;
-                height: 2px;
-                width: 100%;
-                background-color: darkblue;
-                opacity: 1;
-            }
-        }
+    // margin-top: 5rem !important;
+    .card-a-propos {
+        box-shadow: 0 0 10px rgb(215, 215, 215);
     }
 }
