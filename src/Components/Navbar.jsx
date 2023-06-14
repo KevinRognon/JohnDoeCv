@@ -9,7 +9,7 @@ export default function Navbar () {
 
     return (
         <>
-            <header className="position-absolute vw-100 z-3">
+            <header className="position-fixed vw-100 z-3">
                 <nav className="navbar navbar-expand-lg bg-dark z-3" data-bs-theme="dark">
 
                     <div className="container-fluid">

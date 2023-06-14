@@ -16,7 +16,7 @@ export default function Services () {
 
 
             <div className="offres d-flex flex-column justify-content-center align-items-center gap-3 mt-3 p-4">
-                <h2 className='titre-services fs-1 text-center'>MON OFFRE DE SERVICES</h2>
+                <h2 className='titre-services text-center'>MON OFFRE DE SERVICES</h2>
                 <div>
                     <p className='fs-3 lg-fs-3 text-center'>Voici les offres sur lesquelles je peux intervenir.</p>
                 </div>
