@@ -7,9 +7,8 @@ export default function Home () {
 
     return (
         <>
-            <section>
+            <section className='section-home'>
                 <div>
-
                     <h1>Bonjour, je suis John Doe</h1>
 
                     <h2>Développeur web full stack</h2>
@@ -42,7 +41,7 @@ export default function Home () {
                         </p>
                     </div>
 
-                    <div className="image_john_competences col-12 container-sm d-flex gap-2 flex-column">
+                    <div className="image_john_competences">
                         <img className="rounded-2" src={john_doe} alt="John_Doe" />
                         <h3>Mes compétences</h3>
                         <div className="competences d-flex flex-column gap-3 container-sm">
