@@ -20,9 +20,9 @@ export default function Footer () {
                         Téléphone : 06 20 30 40 50
                     </address>
                     <div className='d-flex gap-4'>
-                        <a noindex target="_blank" rel="noreferrer" href="http://github.com"><img src={github} alt="github"/></a>
-                        <a noindex target="_blank" rel="noreferrer" href="http://twitter.com/"><img src={twitter} alt="twitter"/></a>
-                        <a noindex target="_blank" rel="noreferrer" href="http://linkedin.com/"><img src={linkedin} alt="linkedin"/></a>
+                        <a target="_blank" rel="noreferrer" href="http://github.com"><img src={github} alt="github"/></a>
+                        <a target="_blank" rel="noreferrer" href="http://twitter.com/"><img src={twitter} alt="twitter"/></a>
+                        <a target="_blank" rel="noreferrer" href="http://linkedin.com/"><img src={linkedin} alt="linkedin"/></a>
                     </div>
                 </div>
 
