@@ -1,34 +1,5 @@
 
 
-@media screen and (min-width: 1000px) {
-    .image-services {
-        background-image: url(../assets//banner.jpg);
-        height: 200px;
-        background-size: cover;
-        background-position-y: 50%;
-    }
-
-    .titre_services {
-        font-size: 4em;
-    }
-
-    .card-service {
-        height: 35rem;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
-    .image-services {
-        background-image: url(../assets/banner-mobile.jpg);
-        height: 150px;
-        background-size: cover;
-        background-position-x: 80%;
-    }
-
-    .card-service {
-        height: 20rem;
-    }
-}
 
 
 

@@ -3,7 +3,7 @@
 export default function Project (props) {
 
     return (
-        <div className="card-realisation d-flex flex-column justify-content-center align-items-center gap-3 col-11 col-lg-3 card border-0 rounded-4 shadow text-center ">
+        <div className="card-realisation d-flex flex-column justify-content-center align-items-center align-items-md-stretch gap-3 col-11 col-md-5 col-lg-3 card border-0 rounded-4 shadow text-center ">
             <img className="col-12 rounded-top-4" src={props.realisation_image} alt={props.title} />
 
             <div className="card-body d-flex flex-column justify-content-center align-items-center">
