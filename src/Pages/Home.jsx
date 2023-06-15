@@ -20,7 +20,7 @@ export default function Home () {
             </section>
 
 
-            <section className='gap-5 d-flex align-items-center justify-content-center' id="a-propos">
+            <section className='gap-5 d-flex align-items-center justify-content-center mb-5' id="a-propos">
                 <div className='card-a-propos d-flex justify-content-between flex-column flex-lg-row card p-5 mt-5 border-0 col-12 col-xl-11'>
 
                     <div className='d-flex flex-column col-lg-5 gap-5'>

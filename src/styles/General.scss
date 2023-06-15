@@ -42,3 +42,11 @@ a {
 .text-align-justify {
     text-align: justify;
 }
+
+.sep {
+    height: 5px;
+    border: none;
+    background-color: var(--button);
+    opacity: 100;
+    margin: 0;
+}
