@@ -2,10 +2,13 @@ import Project from "../Components/Project";
 import fresh_food from '../assets/portfolio/fresh-food.jpg';
 import espace_bien_etre from '../assets/portfolio/espace-bien-etre.jpg';
 import akira from '../assets/portfolio/restaurant-japonais.jpg';
+import { useEffect } from "react";
 
 
 export default function Realisations () {
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
 
     return (
         <section>

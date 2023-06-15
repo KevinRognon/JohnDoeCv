@@ -1,9 +1,13 @@
+import { useEffect } from 'react';
+
 import BlogPost from '../Components/BlogPost';
 import { blogpost } from '../data/data';
 
 export default function Blog () {
 
-
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
     return (
         <section className='col-12'>
             <article className="section-image"></article>
@@ -11,7 +15,7 @@ export default function Blog () {
             <div className='d-flex flex-column justify-content-center align-items-center gap-3 mt-3 p-4'>
                 <h2 className='fs-1'>BLOG</h2>
                 <div>
-                    <p className='text-center'>
+                    <p className='fs-3 lg-fs-3 text-center'>
                         Retrouvez ici quelques articles sur le développement web.
                     </p>
                 </div>

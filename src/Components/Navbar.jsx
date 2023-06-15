@@ -6,6 +6,12 @@ import Footer from "./Footer";
 
 export default function Navbar () {
 
+    const col = document.querySelector(".collapse");
+
+    function handleShow (e) {
+        
+        col.classList.remove("show");
+    }
 
     return (
         <>
@@ -24,11 +30,11 @@ export default function Navbar () {
                         <div className="collapse navbar-collapse justify-content-end " id="navbarNav">
 
                             <ul className="navbar-nav gap-3 me-5">
-                                <NavLink className="nav-link" to="/">Accueil</NavLink>
-                                <NavLink className="nav-link" to="/services">Services</NavLink>
-                                <NavLink className="nav-link" to="/realisations">Réalisations</NavLink>
-                                <NavLink className="nav-link" to="/blog">Blog</NavLink>
-                                <NavLink className="nav-link" to="/me-contacter">Me contacter</NavLink>
+                                <NavLink onClick={handleShow} className="nav-link" to="/">Accueil</NavLink>
+                                <NavLink onClick={handleShow} className="nav-link" to="/services">Services</NavLink>
+                                <NavLink onClick={handleShow} className="nav-link" to="/realisations">Réalisations</NavLink>
+                                <NavLink onClick={handleShow} className="nav-link" to="/blog">Blog</NavLink>
+                                <NavLink onClick={handleShow} className="nav-link" to="/me-contacter">Me contacter</NavLink>
                             </ul>
 
                         </div>

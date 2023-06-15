@@ -1,4 +1,4 @@
-import { Fragment } from "react";
+import { Fragment, useEffect } from "react";
 import Service from "../Components/Service";
 
 import mac from '../assets/imac.png';
@@ -8,6 +8,9 @@ import loupe from '../assets/find.png';
 
 export default function Services () {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
 
     return (
         

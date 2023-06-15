@@ -1,9 +1,13 @@
+import { useEffect } from 'react';
 import john_doe from '../assets/john-doe-about.jpg';
 
 
 
 export default function Home () {
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    })
 
     return (
         <>
