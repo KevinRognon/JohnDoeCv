@@ -11,7 +11,7 @@ export default function Project (props) {
                 <p>
                     {props.realisation_description}
                 </p>
-                <button className="btn btn-outline-primary w-25">Voir</button>
+                <button className="btn btn-outline-primary">Voir</button>
             </div>
             <div className="card-footer col-12 d-flex justify-content-center align-items-center">
                 <p>
