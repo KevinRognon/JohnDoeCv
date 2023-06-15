@@ -1,0 +1,20 @@
+
+
+.section-contact {
+    background-image: url(../assets/contact-bg.jpg);
+    background-size: cover;
+
+
+
+    &::after {
+        content: "";
+        display: block;
+        position: fixed;
+        top:0;
+        left:0;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        z-index: 1;
+    }
+}

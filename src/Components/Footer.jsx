@@ -56,7 +56,7 @@ export default function Footer () {
                     </div>
                 </div>
             </div>
-            <small>
+            <small className='z-1'>
                 <div className='d-flex flex-column align-items-center justify-content-center gap-1 bg-dark p-3 mt-4'>
                     <div className='d-flex justify-content-center align-items-center gap-1'>
                         <img className='symbole-copyright' src={copyright} alt="symbole de copyright" />

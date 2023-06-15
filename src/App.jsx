@@ -5,6 +5,7 @@ import './styles/Services.scss';
 import './styles/Realisations.scss';
 import './styles/Blog.scss';
 import './styles/Contact.scss';
+import './styles/Responsive.scss';
 
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
