@@ -30,14 +30,14 @@ export default function Realisations () {
                 <Project 
                     realisation_image={akira} 
                     title="Restaurant Akira"
-                    realisation_description="Réalisation d'un site avec commande en ligne."
-                    realisation_langage="Site réalisé avec PHP et MySQL"    
+                    realisation_description="Réalisation d'un site vitrine."
+                    realisation_langage="Site réalisé avec WordPress"    
                 />
                 <Project 
                     realisation_image={espace_bien_etre} 
                     title="Espace bien-être"
-                    realisation_description="Réalisation d'un site avec commande en ligne."
-                    realisation_langage="Site réalisé avec PHP et MySQL"    
+                    realisation_description="Réalisation d'un site vitrine pour un praticien de bien-être."
+                    realisation_langage="Site réalisé en HTML/CSS"    
                 />
 
             </article>
