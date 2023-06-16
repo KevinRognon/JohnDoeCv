@@ -1,18 +1,11 @@
 import { NavLink, Outlet } from "react-router-dom";
 import Footer from "./Footer";
-import { useEffect } from "react";
 
 
 
 
 export default function Navbar () {
 
-    
-    const collapse = document.querySelector(".collapse");
-    
-    const handleShow = () => {
-        collapse.classList.remove("show");
-    }
 
 
     return (
@@ -32,7 +25,7 @@ export default function Navbar () {
                         <div className="collapse navbar-collapse justify-content-end " id="navbarNav">
 
                             <ul className="navbar-nav gap-3 me-5">
-                                <NavLink onClick={handleShow} className="nav-link" to="/">Accueil</NavLink>
+                                <NavLink className="nav-link" to="/">Accueil</NavLink>
                                 <NavLink className="nav-link" to="/services">Services</NavLink>
                                 <NavLink className="nav-link" to="/realisations">Réalisations</NavLink>
                                 <NavLink className="nav-link" to="/blog">Blog</NavLink>
