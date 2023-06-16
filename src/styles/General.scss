@@ -69,6 +69,19 @@ a {
     margin: 0;
 }
 
+.sep-secondaire {
+    height: 3px;
+    border: none;
+    background-color: var(--button);
+    opacity: 90;
+    margin: 0;
+}
+
 .arrow-up:hover {
     cursor: pointer;
+}
+
+footer {
+    z-index: 1 !important;
+    position: relative;
 }

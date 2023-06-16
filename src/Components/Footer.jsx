@@ -12,7 +12,7 @@ export default function Footer () {
 
     return (
         <>
-            <div className='pt-5 ps-3 d-flex flex-column gap-3 flex-lg-row gap-lg-5 justify-content-lg-center'>
+            <div className='pt-5 ps-3 d-flex flex-column gap-3 flex-md-row flex-lg-row gap-lg-5 justify-content-lg-center'>
                 <div>
                     <h3 className='fs-4'>John Doe</h3>
                     <address>
