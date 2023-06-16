@@ -1,4 +1,4 @@
-import { Fragment, useEffect } from "react";
+import { Fragment } from "react";
 import Service from "../Components/Service";
 
 import mac from '../assets/imac.png';
@@ -8,9 +8,7 @@ import loupe from '../assets/find.png';
 
 export default function Services () {
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    })
+
 
     return (
         
@@ -26,7 +24,7 @@ export default function Services () {
                 <hr className='sep w-25' />
             </div>
 
-            <article className="d-flex flex-column flex-lg-row align-items-center gap-3 mt-5 mb-5 col-12 col-lg-12 justify-content-lg-center"> 
+            <article className="d-flex flex-column flex-md-row flex-md-wrap justify-content-md-center flex-lg-row align-items-center gap-3 mt-5 mb-5 col-12 col-lg-12 justify-content-lg-center"> 
 
                 <Service service_image={mac} service_title='UX DESIGN' service_description={
                     <Fragment>

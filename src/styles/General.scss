@@ -77,9 +77,19 @@ a {
     margin: 0;
 }
 
-.arrow-up:hover {
-    cursor: pointer;
+.bouton_retour_haut {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5;
+    transition: .4s ease;
+    
+    &:hover {
+        cursor: pointer;
+    }
 }
+
+
 
 footer {
     z-index: 1 !important;
