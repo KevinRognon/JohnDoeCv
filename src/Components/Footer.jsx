@@ -3,7 +3,6 @@ import twitter from '../assets/signe-twitter.png';
 import linkedin from '../assets/logo-linkedin.png'
 import angle_droit from '../assets/angle-droit.png';
 import copyright from '../assets/copyright.png';
-import arrow from '../assets/arrow-up.png';
 
 import { NavLink } from 'react-router-dom';
 
@@ -61,12 +60,6 @@ export default function Footer () {
                     <div className='d-flex justify-content-center align-items-center gap-1'>
                         <img className='symbole-copyright' src={copyright} alt="symbole de copyright" />
                         <span className='fs-9 text-light'>Designed by John Doe</span>
-                    </div>
-
-                    <div className='arrow-up text-light text-decoration-underline' onClick={() => {window.scrollTo(0, 0);}}>
-                        <img src={arrow} alt="flèche vers le haut"/>
-                        <span>Retour en haut de page</span>
-                        <img src={arrow} alt="flèche vers le haut"/>
                     </div>
                 </div>
             </small>

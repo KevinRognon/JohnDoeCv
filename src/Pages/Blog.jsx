@@ -1,13 +1,10 @@
-import { useEffect } from 'react';
 
 import BlogPost from '../Components/BlogPost';
 import { blogpost } from '../data/data';
 
 export default function Blog () {
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    })
+
     return (
         <section className='col-12'>
             <article className="section-image"></article>
