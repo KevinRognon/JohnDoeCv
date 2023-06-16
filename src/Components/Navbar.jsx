@@ -1,5 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import Footer from "./Footer";
+import {useEffect} from "react";
 
 
 
@@ -7,10 +8,9 @@ import Footer from "./Footer";
 export default function Navbar () {
 
 
-
     return (
         <>
-            <header className=" z-3">
+            <header className="header-nav z-3">
                 <nav className="navbar navbar-expand-lg bg-dark z-3" data-bs-theme="dark">
 
                     <div className="container-fluid">
@@ -22,7 +22,7 @@ export default function Navbar () {
 
                         </button>
 
-                        <div className="collapse navbar-collapse justify-content-end " id="navbarNav">
+                        <div className="collapse auto navbar-collapse justify-content-end " id="navbarNav">
 
                             <ul className="navbar-nav gap-3 me-5">
                                 <NavLink className="nav-link" to="/">Accueil</NavLink>
