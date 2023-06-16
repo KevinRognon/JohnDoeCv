@@ -22,7 +22,7 @@ body {
 
 @media screen and (min-width: 1024px) {
     .section-image {
-        background-image: url(../assets//banner.jpg);
+        background-image: url(../assets/banner.jpg);
         height: 200px;
         background-size: cover;
         background-position-y: 50%;
@@ -77,8 +77,13 @@ a {
     margin: 0;
 }
 
-.arrow-up:hover {
-    cursor: pointer;
+.bouton_retour_haut {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
+    z-index: 5;
+    transition: .4s ease;
 }
 
 footer {
