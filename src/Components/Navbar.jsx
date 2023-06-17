@@ -1,17 +1,11 @@
 import { NavLink, Outlet } from "react-router-dom";
 import Footer from "./Footer";
-import {useEffect, Com} from "react";
 
 
 
 
 export default function Navbar () {
 
-    const navlinks = document.querySelectorAll('.nav-link');
-    const collapse = document.querySelector(".collapse");
-    navlinks.addEventListener("mousedown", () => {
-        collapse.classList.remove("show");
-    })
 
     return (
         <>

@@ -18,7 +18,7 @@ export default function Home () {
 
                     <h2 className='titre-metier-home'>Développeur web full stack</h2>
 
-                    <button className='bouton-savoir-plus-home btn btn-primary text-light' type="button"><a href="#a-propos">En savoir plus</a></button>
+                    <a className='bouton-savoir-plus-home btn btn-primary text-light' href="#a-propos">En savoir plus</a>
 
                 </div>
             </section>
