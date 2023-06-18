@@ -13,12 +13,14 @@ import Services from './Pages/Services';
 import Realisations from './Pages/Realisations';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
+import GithubPage from './Pages/GithubPage';
 
 import up_arrow from './assets/up-arrow.png';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import {useEffect} from "react";
+import MentionsLegales from './Pages/MentionsLegales';
 
 
 function App() {
@@ -49,6 +51,8 @@ function App() {
             <Route path="/realisations" element={<Realisations/>} />
             <Route path="/blog" element={<Blog/>} />
             <Route path="/me-contacter" element={<Contact/>} />
+            <Route path="/github-john-doe" element={<GithubPage/>} />
+            <Route path="/mentions-legales" element={<MentionsLegales/>} />
           </Route>
         </Routes>
       </BrowserRouter>
