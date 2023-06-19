@@ -13,31 +13,32 @@ import Services from './Pages/Services';
 import Realisations from './Pages/Realisations';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
-import retour_haut from './assets/retour_haut.png';
+import GithubPage from './Pages/GithubPage';
 
+import up_arrow from './assets/up-arrow.png';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { useEffect } from 'react';
+import {useEffect} from "react";
+import MentionsLegales from './Pages/MentionsLegales';
 
 
 function App() {
+    useEffect(() => {
+        window.addEventListener("scroll", scroll);
+        let bouton = document.querySelector(".bouton_retour_haut");
 
-  useEffect(() => {
-    window.addEventListener("scroll", scroll);
-    let bouton = document.querySelector(".bouton_retour_haut");
+        function scroll () {
+            let y = window.scrollY;
+            if (y < 500) {
+                bouton.style.opacity = "0%";
+            }
+            else {
+                bouton.style.opacity = "100%";
+            }
+        }
+    })
 
-    function scroll () {
-        let y = window.scrollY;
-        if (y > 200) {
-            bouton.style.opacity = "100%";
-            console.log(y);
-        }
-        else {
-            bouton.style.opacity = "0%";
-        }
-    }
-  })
   return (
     <div className="App">
       <BrowserRouter>
@@ -48,15 +49,17 @@ function App() {
             <Route path="/realisations" element={<Realisations/>} />
             <Route path="/blog" element={<Blog/>} />
             <Route path="/me-contacter" element={<Contact/>} />
+            <Route path="/github-john-doe" element={<GithubPage/>} />
+            <Route path="/mentions-legales" element={<MentionsLegales/>} />
           </Route>
         </Routes>
       </BrowserRouter>
-      <div onClick={() => {window.scrollTo(0, 0);}} className='bouton_retour_haut'>
-        <img src={retour_haut} alt="flèche de retour haut" />
+      <div onClick={() => {window.scrollTo(0, 0);}} className="bouton_retour_haut">
+        <img src={up_arrow} alt="flèche retour en haut de page"/>
       </div>
-
     </div>
-  );
+
+  )
 }
 
 export default App;

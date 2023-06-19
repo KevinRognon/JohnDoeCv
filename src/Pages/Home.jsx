@@ -15,9 +15,7 @@ export default function Home () {
 
                     <h2 className='titre-metier-home'>Développeur web full stack</h2>
 
-                    <a className='d-flex justify-content-center col-11 col-lg-7' href="#a-propos">
-                        <button className='bouton-savoir-plus-home btn btn-primary text-light' type="button">En savoir plus</button>
-                    </a>
+                    <a className='bouton-savoir-plus-home btn btn-primary text-light' href="#a-propos">En savoir plus</a>
 
                 </div>
             </section>
@@ -50,7 +48,6 @@ export default function Home () {
                         <img className="rounded-2 col-12 col-lg-12" src={john_doe} alt="John_Doe" />
                         <h3 className='mt-2'>Mes compétences</h3>
 
-
                         <div className="competences d-flex flex-column gap-md-4">
                             <div>
                                 <p className='mb-0 mt-3'>HTML5 90%</p>
@@ -60,6 +57,7 @@ export default function Home () {
                             </div>
                             <div>
                                 <p className='mb-0 mt-3'>CSS3 80%</p>
+
                                 <div className="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                                     <div className="progress-bar bg-info" style={{width: "80%"}}></div>
                                 </div>

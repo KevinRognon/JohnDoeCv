@@ -22,7 +22,7 @@ body {
 
 @media screen and (min-width: 1024px) {
     .section-image {
-        background-image: url(../assets//banner.jpg);
+        background-image: url(../assets/banner.jpg);
         height: 200px;
         background-size: cover;
         background-position-y: 50%;
@@ -36,7 +36,6 @@ body {
         height: 35rem;
     }
 }
-
 
 nav {
     text-transform: uppercase;
@@ -79,11 +78,11 @@ a {
 
 .bouton_retour_haut {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 30px;
+    right: 30px;
+    opacity: 0;
     z-index: 5;
     transition: .4s ease;
-    
     &:hover {
         cursor: pointer;
     }
