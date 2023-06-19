@@ -8,7 +8,7 @@ export default function Contact () {
         
         <section className="section-contact d-flex flex-column justify-content-center align-items-center col-12 pt-2">
 
-            <article className="card-contact card d-flex flex-column justify-content-center align-items-center col-11 mt-5 mb-5 pb-5 flex-md-row flex-md-wrap justify-content-md-evenly flex-lg-column justify-content-lg-evenly row-gap-1">
+            <article className="card-contact card d-flex flex-column justify-content-center align-items-center col-11 mb-5 mt-5 pb-5 flex-md-row flex-md-wrap justify-content-md-evenly flex-lg-column justify-content-lg-evenly row-gap-1">
 
                 <div className="d-flex flex-column justify-content-center align-items-center mb-5 pt-5">
                     <h1 className="mb-2">ME CONTACTER</h1>

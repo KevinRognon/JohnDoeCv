@@ -39,8 +39,6 @@ function App() {
         }
     })
 
-
-
   return (
     <div className="App">
       <BrowserRouter>
@@ -61,7 +59,7 @@ function App() {
       </div>
     </div>
 
-  );
+  )
 }
 
 export default App;

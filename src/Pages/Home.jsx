@@ -1,13 +1,10 @@
-import { useEffect } from 'react';
+
 import john_doe from '../assets/john-doe-about.jpg';
 
 
 
 export default function Home () {
 
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    })
 
     return (
         <>
@@ -24,16 +21,17 @@ export default function Home () {
             </section>
 
 
-            <section className='gap-5 d-flex align-items-center justify-content-center mb-5' id="a-propos">
-                <div className='card-a-propos d-flex justify-content-between flex-column flex-lg-row card p-5 mt-5 border-0 col-12 col-xl-11'>
+            <section className='gap-5 d-flex align-items-center justify-content-center mb-5 ' id="a-propos">
+                
+                <div className='card-a-propos d-flex justify-content-evenly flex-column flex-md-row col-md-11 flex-lg-row card p-4 mt-5 border-0 col-12 col-xl-11'>
 
-                    <div className='d-flex flex-column col-lg-5 gap-5'>
+                    <div className='d-flex flex-column col-lg-5 col-md-6 gap-5'>
 
                         <div className="titre-section-a-propos">
                             <h3>À propos</h3>
                             <hr />
                         </div>
-                        <div className='text-align-justify col-lg-11 fs-4 d-flex flex-column gap-2'>
+                        <div className=' col-lg-11 fs-4 d-flex flex-column gap-2'>
                             <p>
                                 Passionné par l'informatique et les nouvelles <br />technologies, j'ai suivi une formation d'<strong>intégrateur-développeur web</strong> au CEF. Au cours de cette formation, j'ai pu acquérir des bases solides pour travailler dans le domaine du dévelopemment web.
                             </p>
@@ -46,38 +44,38 @@ export default function Home () {
                         </div>
                     </div>
 
-                    <div className="image_john_competences col-lg-6">
+                    <div className="image_john_competences col-md-5 col-lg-6">
                         <img className="rounded-2 col-12 col-lg-12" src={john_doe} alt="John_Doe" />
                         <h3 className='mt-2'>Mes compétences</h3>
 
-
-                        <div className="competences d-flex flex-column gap-4">
+                        <div className="competences d-flex flex-column gap-md-4">
                             <div>
-                                <p className="mb-0">HTML5 90%</p>
+                                <p className='mb-0 mt-3'>HTML5 90%</p>
                                 <div className="progress" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
                                     <div className="progress-bar bg-danger" style={{width: "90%"}}></div>
                                 </div>
                             </div>
                             <div>
-                                <p className="mb-0">CSS3 80%</p>
+                                <p className='mb-0 mt-3'>CSS3 80%</p>
+
                                 <div className="progress" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                                     <div className="progress-bar bg-info" style={{width: "80%"}}></div>
                                 </div>
                             </div>
                             <div>
-                                <p className="mb-0">JAVASCRIPT 70%</p>
+                                <p className='mb-0 mt-3'>JAVASCRIPT 70%</p>
                                 <div className="progress" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
                                     <div className="progress-bar bg-warning" style={{width: "70%"}}></div>
                                 </div>
                             </div>
                             <div>
-                                <p className="mb-0">PHP 60%</p>
+                                <p className='mb-0 mt-3'>PHP 60%</p>
                                 <div className="progress" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
                                     <div className="progress-bar bg-success" style={{width: "60%"}}></div>
                                 </div>
                             </div>
                             <div>
-                                <p className="mb-0">REACT 50%</p>
+                                <p className='mb-0 mt-3'>REACT 50%</p>
                                 <div className="progress" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
                                     <div className="progress-bar bg-primary" style={{width: "50%"}}></div>
                                 </div>

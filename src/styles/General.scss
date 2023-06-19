@@ -83,11 +83,12 @@ a {
     opacity: 0;
     z-index: 5;
     transition: .4s ease;
-
     &:hover {
         cursor: pointer;
     }
 }
+
+
 
 footer {
     z-index: 1 !important;
