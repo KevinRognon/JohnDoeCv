@@ -5,6 +5,7 @@ import './styles/Services.scss';
 import './styles/Realisations.scss';
 import './styles/Blog.scss';
 import './styles/Contact.scss';
+import './styles/Responsive.scss';
 
 import Navbar from './Components/Navbar';
 import Home from './Pages/Home';
@@ -12,12 +13,34 @@ import Services from './Pages/Services';
 import Realisations from './Pages/Realisations';
 import Blog from './Pages/Blog';
 import Contact from './Pages/Contact';
+import GithubPage from './Pages/GithubPage';
+
+import up_arrow from './assets/up-arrow.png';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {useEffect} from "react";
+import MentionsLegales from './Pages/MentionsLegales';
 
 
 function App() {
+    useEffect(() => {
+        window.addEventListener("scroll", scroll);
+        let bouton = document.querySelector(".bouton_retour_haut");
+
+        function scroll () {
+            let y = window.scrollY;
+            if (y < 500) {
+                bouton.style.opacity = "0%";
+            }
+            else {
+                bouton.style.opacity = "100%";
+            }
+        }
+    })
+
+
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -28,10 +51,16 @@ function App() {
             <Route path="/realisations" element={<Realisations/>} />
             <Route path="/blog" element={<Blog/>} />
             <Route path="/me-contacter" element={<Contact/>} />
+            <Route path="/github-john-doe" element={<GithubPage/>} />
+            <Route path="/mentions-legales" element={<MentionsLegales/>} />
           </Route>
         </Routes>
       </BrowserRouter>
+      <div onClick={() => {window.scrollTo(0, 0);}} className="bouton_retour_haut">
+        <img src={up_arrow} alt="flèche retour en haut de page"/>
+      </div>
     </div>
+
   );
 }
 

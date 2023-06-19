@@ -1,1 +1,34 @@
 
+@media screen and (min-width: 1000px) {
+    .image-realisations {
+        background-image: url(../assets/banner.jpg);
+        height: 200px;
+        background-size: cover;
+        background-position-y: 50%;
+    }
+
+    // .card-realisation {
+    //     height: 35rem;
+    // }
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .image-realisations {
+        background-image: url(../assets/banner-mobile.jpg);
+        height: 150px;
+        background-size: cover;
+        background-position-x: 80%;
+    }
+
+    // .card-realisation {
+    //     height: 20rem;
+    // }
+}
+
+.card-footer {
+    p {
+        margin-bottom: 0;
+        padding: .5rem;
+    }
+}
